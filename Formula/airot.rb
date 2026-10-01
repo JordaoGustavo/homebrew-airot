@@ -5,20 +5,20 @@
 class Airot < Formula
   desc "Track Claude Code, Cursor and Codex sessions in the AIRot iPhone app"
   homepage "https://github.com/JordaoGustavo/homebrew-airot"
-  version "0.3.0"
+  version "0.4.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/JordaoGustavo/homebrew-airot/releases/download/v0.3.0/airot_0.3.0_darwin_amd64.tar.gz"
-      sha256 "2ed9465c81e1f2e416c65baad588037121b49e2ca92d28dc782f102f27b04758"
+      url "https://github.com/JordaoGustavo/homebrew-airot/releases/download/v0.4.0/airot_0.4.0_darwin_amd64.tar.gz"
+      sha256 "c52d392a18ad96d269f172b5ad2204815c9eacd0dba6690b61e58540c7cb7226"
 
       define_method(:install) do
         bin.install "airot"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/JordaoGustavo/homebrew-airot/releases/download/v0.3.0/airot_0.3.0_darwin_arm64.tar.gz"
-      sha256 "06182a6fef682044cd358fefd65fc6b698d584531f95a8916f55b5f823b56d84"
+      url "https://github.com/JordaoGustavo/homebrew-airot/releases/download/v0.4.0/airot_0.4.0_darwin_arm64.tar.gz"
+      sha256 "1fe125fab44b7329023d477946df288ed62e3608ace52691569e4c0f3bedf492"
 
       define_method(:install) do
         bin.install "airot"
@@ -28,15 +28,15 @@ class Airot < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/JordaoGustavo/homebrew-airot/releases/download/v0.3.0/airot_0.3.0_linux_amd64.tar.gz"
-      sha256 "dbb53e66cb2377c90b5e5ac538d7bbef6108c281f4daceb9271120e44dc7e3a3"
+      url "https://github.com/JordaoGustavo/homebrew-airot/releases/download/v0.4.0/airot_0.4.0_linux_amd64.tar.gz"
+      sha256 "8c1a4c99170e9ab895eb89ab74a00783084a0f89f9740f4411fa0b7208c2f974"
       define_method(:install) do
         bin.install "airot"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/JordaoGustavo/homebrew-airot/releases/download/v0.3.0/airot_0.3.0_linux_arm64.tar.gz"
-      sha256 "901e3724714ef1d2a7e213c962e5231bc3da155722d623b05a71f8d3cbee6a54"
+      url "https://github.com/JordaoGustavo/homebrew-airot/releases/download/v0.4.0/airot_0.4.0_linux_arm64.tar.gz"
+      sha256 "88257091827ec65e59305738c20a6ff00d86caabd83208af1b672a9deab5f561"
       define_method(:install) do
         bin.install "airot"
       end
