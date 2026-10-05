@@ -5,12 +5,12 @@
 class Airot < Formula
   desc "Track Claude Code, Cursor and Codex sessions in the AIRot iPhone app"
   homepage "https://github.com/JordaoGustavo/homebrew-airot"
-  version "0.6.0"
+  version "0.6.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/JordaoGustavo/homebrew-airot/releases/download/v0.6.0/airot_0.6.0_darwin_amd64.tar.gz"
-      sha256 "3b3a2efc2d99279d5cb4e7b6b8dadd206278f2e04b4eede13aec9b1098bf5f51"
+      url "https://github.com/JordaoGustavo/homebrew-airot/releases/download/v0.6.1/airot_0.6.1_darwin_amd64.tar.gz"
+      sha256 "0ab13dd20a33fa67d9c0e4432a2e5fce517b68a45972ba3fb1f9832c897c920a"
 
       define_method(:install) do
         bin.install "airot"
@@ -18,8 +18,8 @@ class Airot < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/JordaoGustavo/homebrew-airot/releases/download/v0.6.0/airot_0.6.0_darwin_arm64.tar.gz"
-      sha256 "e6fcb72f0c123a0ed069452ba60d1e873ca7a6d2a4fdbf006058754f1f0a6f09"
+      url "https://github.com/JordaoGustavo/homebrew-airot/releases/download/v0.6.1/airot_0.6.1_darwin_arm64.tar.gz"
+      sha256 "9592de89fb1d6128e7c33e27dcc9323ef6f332b8e5d9cc2afe2984a94b0562a1"
 
       define_method(:install) do
         bin.install "airot"
@@ -30,16 +30,16 @@ class Airot < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/JordaoGustavo/homebrew-airot/releases/download/v0.6.0/airot_0.6.0_linux_amd64.tar.gz"
-      sha256 "059856033f36d4df61f8a997653a478e8a218857d33206406033668cfe413c9a"
+      url "https://github.com/JordaoGustavo/homebrew-airot/releases/download/v0.6.1/airot_0.6.1_linux_amd64.tar.gz"
+      sha256 "cc883a5147b1d9a1c9c116235943e48b21f69b7813e9dc331ea59cf0b9d3bd5a"
       define_method(:install) do
         bin.install "airot"
         libexec.install "AIRot Notifier.app" if OS.mac? && File.exist?("AIRot Notifier.app")
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/JordaoGustavo/homebrew-airot/releases/download/v0.6.0/airot_0.6.0_linux_arm64.tar.gz"
-      sha256 "a70f9135dcc743ad633cd090f511142e807a913f6a8928aeb6cbf3ae0ca3b295"
+      url "https://github.com/JordaoGustavo/homebrew-airot/releases/download/v0.6.1/airot_0.6.1_linux_arm64.tar.gz"
+      sha256 "9c9b32e401bd34e4df2284b3b5efb87c395822a441bd63bfbbbc023c0b1f77ed"
       define_method(:install) do
         bin.install "airot"
         libexec.install "AIRot Notifier.app" if OS.mac? && File.exist?("AIRot Notifier.app")
